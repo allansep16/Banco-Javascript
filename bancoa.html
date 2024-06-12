@@ -15,7 +15,8 @@
                 alert('Por favor, informe seu nome.');
                 inicio();
             }
-        } 
+        }
+
         function menu() {
             var escolha = parseInt(prompt('Selecione uma opção:\n1.) Saldo\n2.) Extrato\n3.) Saque\n4.) Depósito\n5.) Transferência\n6.) Sair'));
 
@@ -48,6 +49,7 @@
             var senha = prompt('Informe a senha:');
             return senha === '3589';
         }
+
         function ver_saldo() {
             if (validar_senha()) {
                 alert('Seu saldo atual é: R$' + saldo);
@@ -63,6 +65,7 @@
             } else {
                 alert('Senha incorreta.');
             }
+
             menu();
         }
 
